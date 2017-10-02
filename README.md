@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SimpleZoo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
@@ -6,6 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Use npm install to install all the node modules.
+Also, for bootstrap 
+npm install --save @ng-bootstrap/ng-bootstrap bootstrap@4.0.0-alpha.6
+
 
 ## Code scaffolding
 
@@ -29,4 +32,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # simple-zoo
 Sample Angular App
->>>>>>> 8154e4cea9e1144596c2259288320c1fd41a22ab
