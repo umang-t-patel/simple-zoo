@@ -1,0 +1,12 @@
+<h3>{{ title }}</h3>
+<p></p>
+<div *ngIf='animals' class="text-center">
+    <b> Name:&nbsp; {{ animals.name }}</b><br>
+    <b> Average Height:&nbsp;{{ animals.avgHeight }}</b><br>
+    <b> Average Weight:&nbsp;{{ animals.avgWeight }}</b><br>
+    <b> Description:&nbsp;{{ animals.description }}</b><br>
+    <b> Animal Kingdom:&nbsp;{{ animals.class }}</b><br>
+    <b>  Quantity:&nbsp;{{ animals.quantity }}</b><br>
+    <b>Image </b>
+    <img [src]="animals.image" class="block-img" alt="{{animals.name}}">
+</div>

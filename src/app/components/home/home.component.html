@@ -1,0 +1,38 @@
+<h3>{{ title }}</h3>
+<p></p>
+<form #createForm='ngForm' (ngSubmit)='createAnimal($event,createForm)'>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name" placeholder="Name of Animal">
+  </div>
+  <div class="form-group">
+    <label for="avgHeight">Average Height</label>
+    <input type="number" class="form-control" id="avgHeight" name="avgHeight" [(ngModel)]="avgHeight" placeholder="Average Height of Animal in centimeters">
+  </div>
+  <div class="form-group">
+    <label for="avgWeight">Average Weight</label>
+    <input type="number" class="form-control" id="avgWeight" name="avgWeight" [(ngModel)]="avgWeight" placeholder="Average Weight of Animal in pounds">
+  </div>
+  <div class="form-group">
+    <label for="class">Animal Kingdom</label>
+    <select class="form-control" id="class" name="class" [(ngModel)]="class">
+      <option value="Mammals">Mammals</option>
+      <option value="Birds">Birds</option>
+      <option value="Fish">Fish</option>
+      <option value="Reptiles">Reptiles</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="image">Image URL</label>
+    <input type="text" class="form-control" id="image" name="image" [(ngModel)]="image" placeholder="Image URL">
+  </div>
+  <div class="form-group">
+    <label for="quantity">Quantity</label>
+    <input type="number" class="form-control" id="quantity" name="quantity" [(ngModel)]="quantity" placeholder="Quantity">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" id="description" name="description" [(ngModel)]="description" placeholder="Description">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
